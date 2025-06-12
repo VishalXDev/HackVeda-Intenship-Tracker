@@ -1,118 +1,413 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hackveda Intern Tracker</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackveda Intern Tracker - Find Your Dream Internship</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h2>Hackveda Intern Tracker</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#internships" class="nav-link">Internships</a>
+                <a href="#courses" class="nav-link">Courses</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <button class="btn btn-primary">Sign Up</button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <h1>Intern Tracker by Hackveda</h1>
-    <p>Track, apply, and grow with India’s smartest internship tracker.</p>
-    <a href="#register" class="cta-btn">Get Started</a>
-  </section>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Launch Your Career with <span class="highlight">Hackveda</span></h1>
+                <p class="hero-subtitle">Discover paid internships, upskill with industry-relevant courses, and connect with top companies. Your journey to success starts here.</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary btn-large" id="getStarted">Get Started</button>
+                    <button class="btn btn-secondary btn-large" id="postJob">Post a Job</button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <h3>10K+</h3>
+                        <p>Active Internships</p>
+                    </div>
+                    <div class="stat">
+                        <h3>500+</h3>
+                        <p>Partner Companies</p>
+                    </div>
+                    <div class="stat">
+                        <h3>50K+</h3>
+                        <p>Successful Placements</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="floating-card card-1">
+                    <i class="fas fa-code"></i>
+                    <span>Web Development</span>
+                </div>
+                <div class="floating-card card-2">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Data Science</span>
+                </div>
+                <div class="floating-card card-3">
+                    <i class="fas fa-palette"></i>
+                    <span>UI/UX Design</span>
+                </div>
+                <div class="floating-card card-4">
+                    <i class="fas fa-bullhorn"></i>
+                    <span>Digital Marketing</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Stats Section -->
-  <section class="stats">
-    <div class="stat-card">
-      <h3>50K+</h3>
-      <p>Internships Tracked</p>
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose Hackveda Intern Tracker?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Premium Internships</h3>
+                    <p>Access to exclusive paid internships with stipends up to ₹50,000/month from top companies.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Industry Courses</h3>
+                    <p>Learn from industry experts with hands-on projects and get certified in trending technologies.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Expert Mentorship</h3>
+                    <p>Get guidance from industry professionals and accelerate your career growth.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Skill Certification</h3>
+                    <p>Earn recognized certificates that boost your profile and increase job prospects.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Courses Section -->
+    <section id="courses" class="courses">
+        <div class="container">
+            <h2 class="section-title">Popular Courses</h2>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="course-image">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="course-content">
+                        <h3>Full Stack Development</h3>
+                        <p>Master MERN stack and build production-ready applications</p>
+                        <div class="course-meta">
+                            <span class="duration"><i class="fas fa-clock"></i> 12 weeks</span>
+                            <span class="price">₹9,999</span>
+                        </div>
+                        <button class="btn btn-outline">Enroll Now</button>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-image">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <div class="course-content">
+                        <h3>Data Science & Analytics</h3>
+                        <p>Learn Python, ML, and AI to become a data scientist</p>
+                        <div class="course-meta">
+                            <span class="duration"><i class="fas fa-clock"></i> 16 weeks</span>
+                            <span class="price">₹12,999</span>
+                        </div>
+                        <button class="btn btn-outline">Enroll Now</button>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-image">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <div class="course-content">
+                        <h3>Digital Marketing</h3>
+                        <p>Master SEO, SEM, social media, and content marketing</p>
+                        <div class="course-meta">
+                            <span class="duration"><i class="fas fa-clock"></i> 8 weeks</span>
+                            <span class="price">₹7,999</span>
+                        </div>
+                        <button class="btn btn-outline">Enroll Now</button>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-image">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <div class="course-content">
+                        <h3>UI/UX Design</h3>
+                        <p>Create stunning user experiences with design thinking</p>
+                        <div class="course-meta">
+                            <span class="duration"><i class="fas fa-clock"></i> 10 weeks</span>
+                            <span class="price">₹8,999</span>
+                        </div>
+                        <button class="btn btn-outline">Enroll Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Internships Section -->
+    <section id="internships" class="internships">
+        <div class="container">
+            <h2 class="section-title">Featured Internships</h2>
+            <div class="internship-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="tech">Technology</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+                <button class="filter-btn" data-filter="marketing">Marketing</button>
+                <button class="filter-btn" data-filter="data">Data Science</button>
+            </div>
+            <div class="internships-grid">
+                <div class="internship-card" data-category="tech">
+                    <div class="company-logo">
+                        <i class="fab fa-google"></i>
+                    </div>
+                    <div class="internship-info">
+                        <h3>Software Development Intern</h3>
+                        <p class="company">Google</p>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Bangalore</p>
+                        <div class="internship-details">
+                            <span class="stipend">₹45,000/month</span>
+                            <span class="duration">6 months</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-small">Apply Now</button>
+                </div>
+                <div class="internship-card" data-category="design">
+                    <div class="company-logo">
+                        <i class="fab fa-figma"></i>
+                    </div>
+                    <div class="internship-info">
+                        <h3>UI/UX Design Intern</h3>
+                        <p class="company">Figma</p>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Remote</p>
+                        <div class="internship-details">
+                            <span class="stipend">₹35,000/month</span>
+                            <span class="duration">4 months</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Figma</span>
+                            <span class="tag">Adobe XD</span>
+                            <span class="tag">Prototyping</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-small">Apply Now</button>
+                </div>
+                <div class="internship-card" data-category="data">
+                    <div class="company-logo">
+                        <i class="fab fa-microsoft"></i>
+                    </div>
+                    <div class="internship-info">
+                        <h3>Data Science Intern</h3>
+                        <p class="company">Microsoft</p>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Hyderabad</p>
+                        <div class="internship-details">
+                            <span class="stipend">₹50,000/month</span>
+                            <span class="duration">6 months</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">SQL</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-small">Apply Now</button>
+                </div>
+                <div class="internship-card" data-category="marketing">
+                    <div class="company-logo">
+                        <i class="fab fa-meta"></i>
+                    </div>
+                    <div class="internship-info">
+                        <h3>Digital Marketing Intern</h3>
+                        <p class="company">Meta</p>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Mumbai</p>
+                        <div class="internship-details">
+                            <span class="stipend">₹30,000/month</span>
+                            <span class="duration">3 months</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">SEO</span>
+                            <span class="tag">Social Media</span>
+                            <span class="tag">Analytics</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-small">Apply Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Start Your Journey?</h2>
+                <p>Join thousands of students who have found their dream internships and built successful careers.</p>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary btn-large" id="studentRegister">Student Registration</button>
+                    <button class="btn btn-secondary btn-large" id="getCallback">Get a Callback</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Hackveda Intern Tracker</h3>
+                    <p>Connecting talented students with amazing opportunities.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>For Students</h4>
+                    <ul>
+                        <li><a href="#">Find Internships</a></li>
+                        <li><a href="#">Browse Courses</a></li>
+                        <li><a href="#">Career Guidance</a></li>
+                        <li><a href="#">Success Stories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>For Employers</h4>
+                    <ul>
+                        <li><a href="#">Post Internships</a></li>
+                        <li><a href="#">Find Talent</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Corporate Training</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-phone"></i> +91-9667964138</p>
+                    <p><i class="fas fa-envelope"></i> contact@hackveda.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Bangalore, India</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Hackveda Intern Tracker. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div id="studentModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Student Registration</h2>
+            <form id="studentForm">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="college">College/University</label>
+                    <input type="text" id="college" name="college" required>
+                </div>
+                <div class="form-group">
+                    <label for="course">Course/Stream</label>
+                    <select id="course" name="course" required>
+                        <option value="">Select your course</option>
+                        <option value="computer-science">Computer Science</option>
+                        <option value="engineering">Engineering</option>
+                        <option value="business">Business/Management</option>
+                        <option value="design">Design</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Register Now</button>
+            </form>
+        </div>
     </div>
-    <div class="stat-card">
-      <h3>10K+</h3>
-      <p>Student Users</p>
+
+    <div id="callbackModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Get a Callback</h2>
+            <form id="callbackForm">
+                <div class="form-group">
+                    <label for="cbName">Full Name</label>
+                    <input type="text" id="cbName" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="cbPhone">Phone Number</label>
+                    <input type="tel" id="cbPhone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="cbInterest">Area of Interest</label>
+                    <select id="cbInterest" name="interest" required>
+                        <option value="">Select your interest</option>
+                        <option value="internships">Internships</option>
+                        <option value="courses">Courses</option>
+                        <option value="career-guidance">Career Guidance</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="cbTime">Preferred Call Time</label>
+                    <select id="cbTime" name="time" required>
+                        <option value="">Select preferred time</option>
+                        <option value="morning">Morning (9 AM - 12 PM)</option>
+                        <option value="afternoon">Afternoon (12 PM - 4 PM)</option>
+                        <option value="evening">Evening (4 PM - 8 PM)</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Request Callback</button>
+            </form>
+        </div>
     </div>
-    <div class="stat-card">
-      <h3>500+</h3>
-      <p>Companies Partnered</p>
-    </div>
-  </section>
 
-  <!-- Popular Categories -->
-  <section class="categories">
-    <h2>Popular Categories</h2>
-    <div class="category-grid">
-      <div class="category-card">💻 Full Stack</div>
-      <div class="category-card">🎨 UI/UX</div>
-      <div class="category-card">📊 Data Science</div>
-      <div class="category-card">🚗 Electric Vehicles</div>
-      <div class="category-card">📈 Marketing</div>
-      <div class="category-card">🤖 AI/ML</div>
-    </div>
-  </section>
-
-  <!-- Testimonials -->
-  <section class="testimonials">
-    <h2>What Students Say</h2>
-    <div class="testi-grid">
-      <div class="testi-card">
-        <p>"Intern Tracker helped me land my first internship at Google!"</p>
-        <h4>– Priya, CSE Student</h4>
-      </div>
-      <div class="testi-card">
-        <p>"Simple and effective. I tracked all my applications easily."</p>
-        <h4>– Rohit, BBA Student</h4>
-      </div>
-    </div>
-  </section>
-
-  <!-- How It Works -->
-  <section class="how-it-works">
-    <h2>How It Works</h2>
-    <div class="steps-grid">
-      <div class="step">
-        <h3>1. Sign Up</h3>
-        <p>Create your profile in seconds.</p>
-      </div>
-      <div class="step">
-        <h3>2. Track</h3>
-        <p>Monitor your internship applications.</p>
-      </div>
-      <div class="step">
-        <h3>3. Get Hired</h3>
-        <p>Land your dream internship with ease.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq">
-    <h2>FAQs</h2>
-    <div class="faq-item"><strong>Is it free?</strong><p>Yes! 100% free for students.</p></div>
-    <div class="faq-item"><strong>How many internships can I track?</strong><p>You can track as many as you like.</p></div>
-  </section>
-
-  <!-- Registration Form -->
-  <section class="register" id="register">
-    <h2>Student Registration</h2>
-    <form id="regForm">
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <input type="text" placeholder="Your Course" required />
-      <select required>
-        <option value="">Select Interest</option>
-        <option>Full Stack</option>
-        <option>Marketing</option>
-        <option>AI/ML</option>
-      </select>
-      <button type="submit">Register</button>
-    </form>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Hackveda Intern Tracker | WhatsApp: +91-9667964138</p>
-  </footer>
-
-  <script>
-    document.getElementById("regForm").addEventListener("submit", function (e) {
-      e.preventDefault();
-      alert("✅ Registration submitted! We'll contact you soon.");
-      this.reset();
-    });
-  </script>
+    <script src="script.js"></script>
 </body>
 </html>
