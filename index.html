@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hackveda Intern Tracker</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Intern Tracker by Hackveda</h1>
+    <p>Track, apply, and grow with India’s smartest internship tracker.</p>
+    <a href="#register" class="cta-btn">Get Started</a>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="stat-card">
+      <h3>50K+</h3>
+      <p>Internships Tracked</p>
+    </div>
+    <div class="stat-card">
+      <h3>10K+</h3>
+      <p>Student Users</p>
+    </div>
+    <div class="stat-card">
+      <h3>500+</h3>
+      <p>Companies Partnered</p>
+    </div>
+  </section>
+
+  <!-- Popular Categories -->
+  <section class="categories">
+    <h2>Popular Categories</h2>
+    <div class="category-grid">
+      <div class="category-card">💻 Full Stack</div>
+      <div class="category-card">🎨 UI/UX</div>
+      <div class="category-card">📊 Data Science</div>
+      <div class="category-card">🚗 Electric Vehicles</div>
+      <div class="category-card">📈 Marketing</div>
+      <div class="category-card">🤖 AI/ML</div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <h2>What Students Say</h2>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <p>"Intern Tracker helped me land my first internship at Google!"</p>
+        <h4>– Priya, CSE Student</h4>
+      </div>
+      <div class="testi-card">
+        <p>"Simple and effective. I tracked all my applications easily."</p>
+        <h4>– Rohit, BBA Student</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="how-it-works">
+    <h2>How It Works</h2>
+    <div class="steps-grid">
+      <div class="step">
+        <h3>1. Sign Up</h3>
+        <p>Create your profile in seconds.</p>
+      </div>
+      <div class="step">
+        <h3>2. Track</h3>
+        <p>Monitor your internship applications.</p>
+      </div>
+      <div class="step">
+        <h3>3. Get Hired</h3>
+        <p>Land your dream internship with ease.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <h2>FAQs</h2>
+    <div class="faq-item"><strong>Is it free?</strong><p>Yes! 100% free for students.</p></div>
+    <div class="faq-item"><strong>How many internships can I track?</strong><p>You can track as many as you like.</p></div>
+  </section>
+
+  <!-- Registration Form -->
+  <section class="register" id="register">
+    <h2>Student Registration</h2>
+    <form id="regForm">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <input type="text" placeholder="Your Course" required />
+      <select required>
+        <option value="">Select Interest</option>
+        <option>Full Stack</option>
+        <option>Marketing</option>
+        <option>AI/ML</option>
+      </select>
+      <button type="submit">Register</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Hackveda Intern Tracker | WhatsApp: +91-9667964138</p>
+  </footer>
+
+  <script>
+    document.getElementById("regForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      alert("✅ Registration submitted! We'll contact you soon.");
+      this.reset();
+    });
+  </script>
+</body>
+</html>
